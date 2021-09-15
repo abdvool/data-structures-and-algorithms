@@ -16,7 +16,7 @@ const addOne = (arr) => {
 
     let newItem = item + 1;
     newArr.push(newItem);
-    
+
   });
   return newArr;
 };
@@ -53,15 +53,15 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 const allUpperCase = (arr) => {
   // Solution code here...
   let newArr = [];
-arr.forEach((item) =>{
+  arr.forEach((item) => {
 
 
-  newArr.push(item.toUpperCase())
-}
+    newArr.push(item.toUpperCase())
+  }
 
 
-)  
-return newArr
+  )
+  return newArr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -83,10 +83,10 @@ const speaker = (words, callback) => {
   // Solution code here...
 
   let newArr = [];
-  words.forEach(value => 
-    newArr.push(callback(value)) )
-    return newArr;
-   
+  words.forEach(value =>
+    newArr.push(callback(value)))
+  return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -114,8 +114,8 @@ const addValues = (arr, value) => {
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
 
-  for(let i=0; i< times ;i++){
-  callback(arr,num)
+  for (let i = 0; i < times; i++) {
+    callback(arr, num);
   }
   return arr;
 };
@@ -141,17 +141,17 @@ This function should use forEach to populate your grocery list based on the stor
 const createList = (availableItems) => {
 
   // Solution code here...
-  let arrlist =[];
+  let arrlist = [];
 
   availableItems.forEach((item) => {
 
-    if (item.available === true){
+    if (item.available === true) {
       arrlist.push(item.name);
     }
   }
-  
-  
-  
+
+
+
   )
   return arrlist
 };
