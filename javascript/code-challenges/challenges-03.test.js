@@ -11,6 +11,7 @@ const addTwo = (arr) => {
 
   let newArr = []
 
+
    arr.map(number => {
 
 
@@ -24,6 +25,18 @@ newArr.push(newNumber)
 };
 
 
+
+  arr.forEach(number => {
+    
+    let newNumb = number + 2;
+
+    newArr.push(newNumb);
+  });
+
+  return newArr;
+};
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -34,6 +47,15 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 
 const typeNum = (arr) => {
   // Solution code here...
+
+
+
+let newNumb = arr.filter(n => {
+
+  
+  if (typeof (n) === "number") { return n}
+})
+return newNumb
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,6 +68,17 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 
 const containsAnd = (arr) => {
   // Solution code here...
+
+
+  let newLet = arr.filter(w =>{
+
+  if (w.search ('and') != -1)
+{
+  return w
+
+}
+  })
+  return newLet
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -58,6 +91,18 @@ For example, oddValues([1,2,3]) returns [1,3].
 
 const oddValues = (arr) => {
   // Solution code here...
+
+
+  let odds = arr.filter(n =>{
+
+
+if( n%2 !==0 ) {return true;}
+
+
+
+  })
+  return odds
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -70,6 +115,19 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+
+
+  let newNumb = arr.filter(item =>{
+
+
+if ((forbiddenValues.indexOf(item)) === -1) 
+
+  {return true;}
+
+})
+
+  return newNumb
+
 };
 
 /* ------------------------------------------------------------------------------------------------
